@@ -1,0 +1,21 @@
+@import 'styles/_config.scss';
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 60px;
+}
+
+.name-container h1 {
+	@include avenir;
+	color: $blue;
+	text-transform: uppercase;
+	font-size: 36px;
+}
+
+.title-container h2 {
+	@include avenir-light;
+	text-transform: uppercase;
+	font-size: 20px;
+}

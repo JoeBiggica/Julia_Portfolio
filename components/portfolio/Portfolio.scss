@@ -1,0 +1,21 @@
+@import 'styles/_breakpoints.scss';
+@import 'styles/_colors.scss';
+@import 'styles/_eases.scss';
+
+.container {
+	width: 100%;
+	max-width: 1120px;
+}
+
+.items-wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 75px;
+	grid-auto-rows: minmax(100px, auto);
+	margin-top: 40px;
+	padding-top: 40px;
+}
+
+.item {
+	position: relative;
+}
