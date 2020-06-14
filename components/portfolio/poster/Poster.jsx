@@ -15,11 +15,11 @@ export default class Poster extends Component {
 				<SpringImage 
 					className={styles('poster-spring')}
 					image_url={this.props.poster_image}
+					title={this.props.title}
 				/>
-				<div className={styles('item-poster')} style={item_styles} />
-				<div className={styles('item-title')}>
+				{/*<div className={styles('item-title')}>
 					<h3>{this.props.title}</h3>
-				</div>
+				</div>*/}
 			</div>
 		)
 	}

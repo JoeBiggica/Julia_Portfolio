@@ -5,6 +5,7 @@ import { withRouter } from 'next/router';
 import PropTypes from 'prop-types';
 //import { toggleTap, incrementCount, decrementCount } from '../redux/actions';
 import Head from 'next/head';
+import Header from 'components/header';
 import Button from 'components/button';
 import Social from 'components/social';
 import Portfolio from 'components/portfolio';
@@ -53,6 +54,7 @@ class Index extends Component {
 
 		return (
 			<>
+				<Header />
 				<section className={styles('main', 'container')}>
 					<Portfolio />
 				</section>

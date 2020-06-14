@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
 .styles-clearfix-2Rb3A:before,
 .styles-clearfix-2Rb3A:after {
   content: "";
@@ -47,6 +49,30 @@ ul {
 /*Oswald Webfont*/
 @font-face {
   font-family: 'Oswald', sans-serif; }
+
+/*Oswald Webfont*/
+@font-face {
+  font-family: 'Oswald', sans-serif; }
+
+.Header-container-3ZpuA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px; }
+
+.Header-name-container-1ws6W h1 {
+  font-family: 'Avenir', helvetica, arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #02AEEF;
+  text-transform: uppercase;
+  font-size: 36px; }
+
+.Header-title-container-2CAq5 h2 {
+  font-family: 'Avenir', helvetica, arial, sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+  font-size: 20px; }
 
 .Button-container-2sgpr {
   display: inline-block;
@@ -158,7 +184,14 @@ ul {
 .Social-link-2G6Ya svg {
   height: 25px; }
 
-.SpringImage-card-2QuPC {
+/*Oswald Webfont*/
+@font-face {
+  font-family: 'Oswald', sans-serif; }
+
+.SpringImage-container-174EQ {
+  position: relative; }
+
+.SpringImage-image-2_-6u {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -169,8 +202,21 @@ ul {
   transition: box-shadow 0.5s;
   will-change: transform; }
 
-.SpringImage-card-2QuPC:hover {
+.SpringImage-image-2_-6u:hover {
   box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4); }
+
+.SpringImage-title-19lB0 {
+  position: absolute;
+  top: 10px;
+  right: -20px;
+  padding: 2px 8px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  font-family: 'Futura', helvetica, arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 24px;
+  text-align: center;
+  z-index: 1; }
 
 /*Oswald Webfont*/
 @font-face {
@@ -187,14 +233,14 @@ ul {
 
 .Poster-item-title-2sTDD {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
+  top: 10px;
+  right: -20px;
+  padding: 2px 8px;
   color: #fff;
+  background: rgba(0, 0, 0, 0.7);
   font-family: 'Futura', helvetica, arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 28px;
+  font-size: 24px;
   text-align: center;
   z-index: 1; }
 
@@ -206,9 +252,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 75px;
-  grid-auto-rows: minmax(100px, auto);
-  margin-top: 40px;
-  padding-top: 40px; }
+  grid-auto-rows: minmax(100px, auto); }
 
 .Portfolio-item-3C7xy {
   position: relative; }

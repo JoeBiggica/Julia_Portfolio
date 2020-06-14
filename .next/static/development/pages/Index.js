@@ -115,6 +115,58 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./components/header/Header.jsx":
+/*!**************************************!*\
+  !*** ./components/header/Header.jsx ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Header_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header.scss */ "./components/header/Header.scss");
+/* harmony import */ var _Header_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Header_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+function Header() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
+    className: _Header_scss__WEBPACK_IMPORTED_MODULE_2___default()('header')
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _Header_scss__WEBPACK_IMPORTED_MODULE_2___default()('container')
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _Header_scss__WEBPACK_IMPORTED_MODULE_2___default()('name-container')
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Julia Endow")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _Header_scss__WEBPACK_IMPORTED_MODULE_2___default()('title-container')
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Art Direction + Design"))));
+}
+
+Header.propTypes = {};
+/* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./components/header/index.js":
+/*!************************************!*\
+  !*** ./components/header/index.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header */ "./components/header/Header.jsx");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Header__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
 /***/ "./components/portfolio/Portfolio.jsx":
 /*!********************************************!*\
   !*** ./components/portfolio/Portfolio.jsx ***!
@@ -361,13 +413,9 @@ var Poster = /*#__PURE__*/function (_Component) {
         className: _Poster_scss__WEBPACK_IMPORTED_MODULE_9___default()('container')
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_springimage__WEBPACK_IMPORTED_MODULE_8__["default"], {
         className: _Poster_scss__WEBPACK_IMPORTED_MODULE_9___default()('poster-spring'),
-        image_url: this.props.poster_image
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: _Poster_scss__WEBPACK_IMPORTED_MODULE_9___default()('item-poster'),
-        style: item_styles
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: _Poster_scss__WEBPACK_IMPORTED_MODULE_9___default()('item-title')
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h3", null, this.props.title)));
+        image_url: this.props.poster_image,
+        title: this.props.title
+      }));
     }
   }]);
 
@@ -991,14 +1039,18 @@ var calc = function calc(x, y) {
   return [x - window.innerWidth / 10, y - window.innerHeight / 10];
 };
 
-var trans = function trans(x, y) {
+var trans_image = function trans_image(x, y) {
   return "translate3d(".concat(x / 10, "px,").concat(y / 10, "px,0)");
+};
+
+var trans_title = function trans_title(x, y) {
+  return "translate3d(".concat(x / 5, "px,").concat(y / 50, "px,0)");
 };
 
 function SpringImage(props) {
   var className = props.className,
-      image_url = props.image_url;
-  var ref = Object(react__WEBPACK_IMPORTED_MODULE_2__["useRef"])();
+      image_url = props.image_url,
+      title = props.title;
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(false),
       _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_useState, 2),
@@ -1011,7 +1063,7 @@ function SpringImage(props) {
       config: {
         mass: 10,
         tension: 550,
-        friction: 140
+        friction: 110
       }
     };
   }),
@@ -1039,12 +1091,16 @@ function SpringImage(props) {
       });
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_spring__WEBPACK_IMPORTED_MODULE_5__["animated"].div, {
-    ref: ref,
-    className: _SpringImage_scss__WEBPACK_IMPORTED_MODULE_6___default()('card'),
+    className: _SpringImage_scss__WEBPACK_IMPORTED_MODULE_6___default()('image'),
     style: Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({
-      transform: amimateProps.xy.interpolate(trans)
+      transform: amimateProps.xy.interpolate(trans_image)
     }, image_styles)
-  })));
+  }), title && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_spring__WEBPACK_IMPORTED_MODULE_5__["animated"].div, {
+    className: _SpringImage_scss__WEBPACK_IMPORTED_MODULE_6___default()('title'),
+    style: {
+      transform: amimateProps.xy.interpolate(trans_title)
+    }
+  }, title)));
 }
 
 SpringImage.propTypes = {
@@ -8900,10 +8956,10 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FIndex&absolutePagePath=%2FUsers%2Freuters%2FEngineering%2FJulia-Portfolio-Next%2Fpages%2FIndex.jsx!./":
-/*!*********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FIndex&absolutePagePath=%2FUsers%2Freuters%2FEngineering%2FJulia-Portfolio-Next%2Fpages%2FIndex.jsx ***!
-  \*********************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FIndex&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FJulia_Portfolio%2Fpages%2FIndex.jsx!./":
+/*!*******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FIndex&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FJulia_Portfolio%2Fpages%2FIndex.jsx ***!
+  \*******************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9987,12 +10043,12 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_4896fa23ba8deda57da6 ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_f4f104c9ade4b03e7cea ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_4896fa23ba8deda57da6 */ "dll-reference dll_4896fa23ba8deda57da6"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_f4f104c9ade4b03e7cea */ "dll-reference dll_f4f104c9ade4b03e7cea"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -10465,12 +10521,12 @@ module.exports = exports['default'];
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_4896fa23ba8deda57da6 ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_f4f104c9ade4b03e7cea ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_4896fa23ba8deda57da6 */ "dll-reference dll_4896fa23ba8deda57da6"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_f4f104c9ade4b03e7cea */ "dll-reference dll_f4f104c9ade4b03e7cea"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -11078,12 +11134,12 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_4896fa23ba8deda57da6 ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_f4f104c9ade4b03e7cea ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_4896fa23ba8deda57da6 */ "dll-reference dll_4896fa23ba8deda57da6"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_f4f104c9ade4b03e7cea */ "dll-reference dll_f4f104c9ade4b03e7cea"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -11298,12 +11354,12 @@ exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node
 
 /***/ "./node_modules/react-dom/index.js":
 /*!***********************************************************************************************!*\
-  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_4896fa23ba8deda57da6 ***!
+  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_f4f104c9ade4b03e7cea ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_4896fa23ba8deda57da6 */ "dll-reference dll_4896fa23ba8deda57da6"))("./node_modules/react-dom/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_f4f104c9ade4b03e7cea */ "dll-reference dll_f4f104c9ade4b03e7cea"))("./node_modules/react-dom/index.js");
 
 /***/ }),
 
@@ -16309,12 +16365,12 @@ const extendedAnimated = apply(domElements);
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_4896fa23ba8deda57da6 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_f4f104c9ade4b03e7cea ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_4896fa23ba8deda57da6 */ "dll-reference dll_4896fa23ba8deda57da6"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_f4f104c9ade4b03e7cea */ "dll-reference dll_f4f104c9ade4b03e7cea"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -17964,12 +18020,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! next/head */ "./node_modules/next-server/dist/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _components_button__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/button */ "./components/button/index.js");
-/* harmony import */ var _components_social__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/social */ "./components/social/index.js");
-/* harmony import */ var _components_portfolio__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/portfolio */ "./components/portfolio/index.js");
-/* harmony import */ var _components_springimage__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/springimage */ "./components/springimage/index.js");
-/* harmony import */ var _Index_scss__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./Index.scss */ "./pages/Index.scss");
-/* harmony import */ var _Index_scss__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_Index_scss__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/header */ "./components/header/index.js");
+/* harmony import */ var _components_button__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/button */ "./components/button/index.js");
+/* harmony import */ var _components_social__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/social */ "./components/social/index.js");
+/* harmony import */ var _components_portfolio__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/portfolio */ "./components/portfolio/index.js");
+/* harmony import */ var _components_springimage__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../components/springimage */ "./components/springimage/index.js");
+/* harmony import */ var _Index_scss__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./Index.scss */ "./pages/Index.scss");
+/* harmony import */ var _Index_scss__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_Index_scss__WEBPACK_IMPORTED_MODULE_19__);
 
 
 
@@ -17989,6 +18046,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !_b
 
 
  //import { toggleTap, incrementCount, decrementCount } from '../redux/actions';
+
 
 
 
@@ -18037,9 +18095,9 @@ var Index = /*#__PURE__*/function (_Component) {
       var text_logo_styles = {
         background: "url(static/leakybarrel-text-logo.png) center center / 100% no-repeat"
       };
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_8___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("section", {
-        className: _Index_scss__WEBPACK_IMPORTED_MODULE_18___default()('main', 'container')
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_portfolio__WEBPACK_IMPORTED_MODULE_16__["default"], null)));
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_8___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_14__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("section", {
+        className: _Index_scss__WEBPACK_IMPORTED_MODULE_19___default()('main', 'container')
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_portfolio__WEBPACK_IMPORTED_MODULE_17__["default"], null)));
     }
   }]);
 
@@ -18066,25 +18124,25 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 /***/ }),
 
 /***/ 2:
-/*!*************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2FIndex&absolutePagePath=%2FUsers%2Freuters%2FEngineering%2FJulia-Portfolio-Next%2Fpages%2FIndex.jsx ***!
-  \*************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2FIndex&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FJulia_Portfolio%2Fpages%2FIndex.jsx ***!
+  \***********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2FIndex&absolutePagePath=%2FUsers%2Freuters%2FEngineering%2FJulia-Portfolio-Next%2Fpages%2FIndex.jsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FIndex&absolutePagePath=%2FUsers%2Freuters%2FEngineering%2FJulia-Portfolio-Next%2Fpages%2FIndex.jsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2FIndex&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FJulia_Portfolio%2Fpages%2FIndex.jsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FIndex&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FJulia_Portfolio%2Fpages%2FIndex.jsx!./");
 
 
 /***/ }),
 
-/***/ "dll-reference dll_4896fa23ba8deda57da6":
+/***/ "dll-reference dll_f4f104c9ade4b03e7cea":
 /*!*******************************************!*\
-  !*** external "dll_4896fa23ba8deda57da6" ***!
+  !*** external "dll_f4f104c9ade4b03e7cea" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_4896fa23ba8deda57da6;
+module.exports = dll_f4f104c9ade4b03e7cea;
 
 /***/ })
 
