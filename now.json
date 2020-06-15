@@ -5,6 +5,7 @@
 		"use": "@now/next"
 	}],
 	"routes": [
-		{"src": "/", "dest": "Index"}
+		{"src": "/", "dest": "Index"},
+		{ "src": "/project/(?<name>[^/]+)", "dest": "Project?name=$name"},
 	]
 }
