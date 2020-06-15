@@ -104,9 +104,9 @@ var SiteHead = /*#__PURE__*/function (_PureComponent) {
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
         name: "robots",
         content: "index, follow"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("title", null, "The Leaky Barrel"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("title", null, "Julia Endow"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
         name: "description",
-        content: "The Leaky Barrel"
+        content: "Julia Endow"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
         name: "keywords",
         content: ""
@@ -114,26 +114,17 @@ var SiteHead = /*#__PURE__*/function (_PureComponent) {
         name: "twitter:card",
         content: "summary_large_image"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
-        name: "twitter:image",
-        content: "https://leaky-barrel.now.sh/static/leakybarrel-social-logo.png"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
         property: "fb:app_id",
         content: "926660327777500"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
         name: "og:title",
-        property: "The Leaky Barrel"
+        property: "Julia Endow"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
         property: "og:description",
-        content: "The Leaky Barrel Wines and Spirits website"
+        content: "Julia Endow's art direction and design portfolio"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
         property: "og:type",
         content: "website"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
-        property: "og:url",
-        content: "https://leaky-barrel.now.sh/"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
-        property: "og:image",
-        content: "https://leaky-barrel.now.sh/static/leakybarrel-social-logo.png"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
         name: "msapplication-TileColor",
         content: "#000000"
@@ -143,36 +134,6 @@ var SiteHead = /*#__PURE__*/function (_PureComponent) {
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
         name: "theme-color",
         content: "#780C42"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
-        rel: "canonical",
-        href: "https://leaky-barrel.now.sh"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
-        rel: "shortcut icon",
-        type: "image/x-icon",
-        href: "https://leaky-barrel.now.sh/static/favicon/favicon.png"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
-        rel: "icon",
-        type: "image/png",
-        href: "https://leaky-barrel.now.sh/static/favicon/favicon.png",
-        sizes: "16x16"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
-        rel: "icon",
-        type: "image/png",
-        href: "https://leaky-barrel.now.sh/static/favicon/favicon-32x32.png",
-        sizes: "32x32"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
-        rel: "icon",
-        type: "image/png",
-        href: "https://leaky-barrel.now.sh/static/favicon/favicon-48x48.png",
-        sizes: "48x48"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
-        rel: "icon",
-        type: "image/png",
-        href: "https://leaky-barrel.now.sh/static/favicon/favicon-96x96.png",
-        sizes: "96x96"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("script", {
-        async: true,
-        src: "https://www.googletagmanager.com/gtag/js?id=UA-165823635-1"
       }), this.props.meta.map(this.renderTag));
     }
   }]);
