@@ -18,9 +18,9 @@ class Layout extends PureComponent {
 		columns: PropTypes.oneOf(Object.values(Columns)),
 		left_column_max_width: PropTypes.number,
 		right_column_max_width: PropTypes.number,
-		renderLeftColumn: PropTypes.func,
-		renderRightColumn: PropTypes.func,
-		renderMiddleColumn: PropTypes.func
+		renderLeftColumn: PropTypes.object,
+		renderRightColumn: PropTypes.object,
+		renderMiddleColumn: PropTypes.object
 	}
 
 	static defaultProps = {

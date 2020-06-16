@@ -7,6 +7,7 @@ import fetch from 'isomorphic-unfetch';
 import Head from 'next/head';
 import Header from 'components/header';
 import Layout from 'components/layout';
+import LightBox from 'components/lightbox';
 
 const project_mock =  require('static/project.json');
 
@@ -46,10 +47,43 @@ class Project extends Component {
 		project: {}
 	}
 
-	renderImage = image => {
+	state = {
+		lightbox_active: false
+	}
+
+	componentDidMount() {
+		document.addEventListener('keyup', e => {
+			if (e.keyCode === 13) this.closeLightBox();     // enter
+			if (e.keyCode === 27) this.closeLightBox();   // esc
+		});
+	}
+
+
+	openLightBox = image_url => {
+		this.setState({
+			lightbox_active: true,
+			lightbox_image_url: image_url
+		});
+		document.body.style['overflow-x'] = 'hidden';
+		document.body.style['overflow-y'] = 'hidden';
+	}
+
+	closeLightBox = () => {
+		this.setState({ 
+			lightbox_active: false 
+		});
+		document.body.style['overflow-x'] = '';
+		document.body.style['overflow-y'] = '';
+	}
+
+	renderLightBoxImage = image_url => {
+		return <img className={styles('lightbox-image')} src={image_url} />;
+	}
+
+	renderImage = (image, index) => {
 		return (
-			<div className={styles('image-container')}>
-				<img src={image.url} loading='lazy' />
+			<div key={`image=${index}`} className={styles('image-container')}>
+				<img src={image.url} loading='lazy' onClick={() => this.openLightBox(image.url)}/>
 			</div>
 		);
 	}
@@ -100,6 +134,11 @@ class Project extends Component {
 			description,
 			images
 		} = project_mock;
+
+		const {
+			lightbox_active,
+			lightbox_image_url
+		} = this.state;
 		
 		return (
 			<>
@@ -112,10 +151,15 @@ class Project extends Component {
 					renderRightColumn={this.renderRightColumn()}
 				>
 				</Layout>
+				{ lightbox_active && 
+					<LightBox onClick={() => this.closeLightBox()}>
+						{ this.renderLightBoxImage(lightbox_image_url) }
+					</LightBox>
+				}
 			</>
 		)
 	}
 }
 
 export default withRouter(Project
-	);
+);
