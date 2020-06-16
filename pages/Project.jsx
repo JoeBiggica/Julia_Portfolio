@@ -57,7 +57,7 @@ class Project extends Component {
 			<>
 
 				<div className={styles('title-container')}>
-					<h2 className={styles('title')}>{title}</h2>
+					<h3 className={styles('title')}>{title}</h3>
 					<div className={styles('background')} />
 				</div>
 				<p className={styles('attribution')}>{attribution}</p>

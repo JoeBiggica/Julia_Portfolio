@@ -15,10 +15,22 @@
 	color: $blue;
 	text-transform: uppercase;
 	font-size: 36px;
+	transition: color .25 $easeInOut;
 }
 
 .title-container h2 {
 	@include avenir-light;
 	text-transform: uppercase;
 	font-size: 20px;
+	transition: color .25 $easeInOut;
 }
+
+// a:hover {
+// 	.name-container h1 {
+// 		color: $black;
+// 	}
+
+// 	.title-container h2 {
+// 		color: $blue;
+// 	}
+// }
