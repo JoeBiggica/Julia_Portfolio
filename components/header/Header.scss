@@ -8,6 +8,10 @@
 	flex-direction: column;
 	align-items: center;
 	margin-top: 60px;
+
+	@include for-phone-only {
+		margin-top: 30px;
+	}
 }
 
 .name-container h1 {

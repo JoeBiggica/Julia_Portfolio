@@ -78,7 +78,10 @@ class Project extends Component {
 
 	renderLightBoxImage = image_url => {
 		const image_styles = {
-			backgroundImage: `url(${image_url})`
+			backgroundImage: `url(${image_url})`,
+			backgroundSize: 'contain',
+			backgroundRepeat: 'no-repeat',
+			backgroundPosition: 'center'
 		};
 
 		return (
@@ -90,9 +93,12 @@ class Project extends Component {
 
 	renderImage = (image, index) => {
 		return (
-			<div key={`image=${index}`} className={styles('image-container')}>
-				<img src={image.url} loading='lazy' onClick={() => this.openLightBox(image.url)}/>
-			</div>
+			<img 
+				key={`image=${index}`}
+				src={image.url} 
+				loading='lazy' 
+				onClick={() => this.openLightBox(image.url)}
+			/>
 		);
 	}
 

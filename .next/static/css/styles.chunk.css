@@ -58,6 +58,9 @@ ul {
   flex-direction: column;
   align-items: center;
   margin-top: 60px; }
+  @media (max-width: 599px) {
+    .Header-container-3ZpuA {
+      margin-top: 30px; } }
 
 .Header-name-container-1ws6W h1 {
   font-family: 'Avenir', helvetica, arial, sans-serif;
@@ -90,10 +93,23 @@ ul {
 .Layout-columns-1wlBH {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
   align-content: flex-start; }
+  @media (min-width: 600px) {
+    .Layout-columns-1wlBH {
+      flex-direction: row; } }
   .Layout-columns-1wlBH .Layout-left-column-3Pz6S {
     margin-right: 40px; }
+    @media (max-width: 599px) {
+      .Layout-columns-1wlBH .Layout-left-column-3Pz6S {
+        width: 100% !important;
+        text-align: center;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #aaa; } }
+  @media (max-width: 599px) {
+    .Layout-columns-1wlBH .Layout-right-column-3xxmt {
+      width: 100% !important; } }
 
 .LightBox-container-3NzL1 {
   position: fixed;
@@ -116,6 +132,9 @@ ul {
   display: inline-block; }
   .Project-title-container-1GZPp .Project-title-H985l {
     font-size: 28px; }
+    @media (max-width: 599px) {
+      .Project-title-container-1GZPp .Project-title-H985l {
+        font-size: 24px; } }
   .Project-title-container-1GZPp .Project-background-bDTg_ {
     position: absolute;
     top: 2px;
@@ -133,30 +152,42 @@ ul {
 .Project-description-1Rl-x {
   font-size: 16px;
   line-height: 24px; }
+  @media (max-width: 599px) {
+    .Project-description-1Rl-x {
+      font-size: 14px;
+      line-height: 22px; } }
 
 .Project-image-list-2YXMp {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   align-items: center; }
+  @media (min-width: 600px) {
+    .Project-image-list-2YXMp {
+      flex-direction: row;
+      flex-wrap: wrap; } }
   .Project-image-list-2YXMp img {
     width: 300px;
     margin-bottom: 30px;
     box-shadow: 10px 10px 20px #333333;
     cursor: zoom-in; }
+    @media (min-width: 600px) {
+      .Project-image-list-2YXMp img {
+        width: 45%; } }
 
 .Project-lightbox-image-container-1VfcX {
   width: 50%;
-  height: 90vh;
+  height: 100vh;
+  padding: 20px;
   display: flex;
   justify-content: center; }
+  @media (max-width: 599px) {
+    .Project-lightbox-image-container-1VfcX {
+      width: 100%; } }
   .Project-lightbox-image-container-1VfcX .Project-lightbox-image-Rl77h {
     width: 100%;
-    height: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; }
+    height: 100%; }
 
 .Button-container-2sgpr {
   display: inline-block;
