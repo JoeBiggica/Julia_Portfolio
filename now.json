@@ -6,6 +6,6 @@
 	}],
 	"routes": [
 		{"src": "/", "dest": "Index"},
-		{ "src": "/project/(?<name>[^/]+)", "dest": "Project?name=$name"},
+		{ "src": "/project/(?<name>[^/]+)", "dest": "Project?name=$name"}
 	]
 }
