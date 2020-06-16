@@ -55,9 +55,13 @@ class Project extends Component {
 		} = project_mock;
 		return (
 			<>
-				<h2 className={styles('title')}>{title}</h2>
-			<p className={styles('attribution')}>{attribution}</p>
-			<p className={styles('description')}>{description}</p>
+
+				<div className={styles('title-container')}>
+					<h2 className={styles('title')}>{title}</h2>
+					<div className={styles('background')} />
+				</div>
+				<p className={styles('attribution')}>{attribution}</p>
+				<p className={styles('description')}>{description}</p>
 			</>
 		);
 	}
@@ -72,8 +76,8 @@ class Project extends Component {
 		return (
 			<>
 				<h2 className={styles('title')}>{title}</h2>
-			<p className={styles('attribution')}>{attribution}</p>
-			<p className={styles('description')}>{description}</p>
+				<p className={styles('attribution')}>{attribution}</p>
+				<p className={styles('description')}>{description}</p>
 			</>
 		);
 	}
@@ -98,8 +102,9 @@ class Project extends Component {
 			<>
 				<Header />
 				<Layout
-					columns={Layout.Columns.TWO_COLUMN_INVERTED}
+					columns={Layout.Columns.TWO_COLUMN}
 					padding
+					left_column_max_width={700}
 					renderLeftColumn={this.renderLeftColumn()}
 					renderRightColumn={this.renderRightColumn()}
 				>

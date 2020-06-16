@@ -102,7 +102,7 @@ module.exports = {"container":"Header-container-3ZpuA","name-container":"Header-
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"container":"Layout-container-1Z389","inner":"Layout-inner-d3Io5","padding":"Layout-padding-1J6cR","columns":"Layout-columns-1wlBH"};;
+module.exports = {"container":"Layout-container-1Z389","inner":"Layout-inner-d3Io5","padding":"Layout-padding-1J6cR","columns":"Layout-columns-1wlBH","left-column":"Layout-left-column-3Pz6S"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -124,7 +124,7 @@ module.exports = {"container":"Layout-container-1Z389","inner":"Layout-inner-d3I
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1592268458353");
+            injectCss(link, link.href.split("?")[0] + "?unix=1592269548993");
           });
       }
     }
@@ -140,7 +140,7 @@ module.exports = {"container":"Layout-container-1Z389","inner":"Layout-inner-d3I
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"herobanner":"Project-herobanner-1FyRh","container":"Project-container-1aAGJ","article-header":"Project-article-header-3hsAN","article-body":"Project-article-body-1oug0"};;
+module.exports = {"title-container":"Project-title-container-1GZPp","title":"Project-title-H985l","background":"Project-background-bDTg_","attribution":"Project-attribution-3s5Iw","description":"Project-description-1Rl-x"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -162,7 +162,7 @@ module.exports = {"herobanner":"Project-herobanner-1FyRh","container":"Project-c
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1592257386292");
+            injectCss(link, link.href.split("?")[0] + "?unix=1592272160094");
           });
       }
     }

@@ -7,7 +7,6 @@ import styles from './Layout.scss';
 const Columns = {
 	ONE_COLUMN: 'one-column',
 	TWO_COLUMN: 'two-column',
-	TWO_COLUMN_INVERTED: 'two-column-inverted',
 	THREE_COLUMN: 'three-column'
 };
 
@@ -17,6 +16,8 @@ class Layout extends PureComponent {
 		children: PropTypes.node,
 		padding: PropTypes.bool,
 		columns: PropTypes.oneOf(Object.values(Columns)),
+		left_column_max_width: PropTypes.number,
+		right_column_max_width: PropTypes.number,
 		renderLeftColumn: PropTypes.func,
 		renderRightColumn: PropTypes.func,
 		renderMiddleColumn: PropTypes.func
@@ -32,6 +33,8 @@ class Layout extends PureComponent {
 		const {
 			columns,
 			children,
+			left_column_max_width,
+			right_column_max_width,
 			renderLeftColumn,
 			renderRightColumn,
 			renderMiddleColumn
@@ -44,22 +47,10 @@ class Layout extends PureComponent {
 			case 'two-column': {
 				return (
 					<div className={styles('columns')}>
-						<div className={styles('left-column', 'large')}>
+						<div className={styles('left-column')} style={{maxWidth: `${left_column_max_width}px`}}>
 							{renderLeftColumn}
 						</div>
-						<div className={styles('right-column')}>
-							{renderRightColumn}
-						</div>
-					</div>
-				);
-			}
-			case 'two-column-inverted': {
-				return (
-					<div className={styles('columns')}>
-						<div className={styles('left-column')}>
-							{renderLeftColumn}
-						</div>
-						<div className={styles('right-column', 'large')}>
+						<div className={styles('right-column')} style={{maxWidth: `${right_column_max_width}px`}}>
 							{renderRightColumn}
 						</div>
 					</div>

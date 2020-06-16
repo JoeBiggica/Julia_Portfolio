@@ -88,28 +88,31 @@ ul {
   display: flex;
   flex-direction: row;
   align-content: space-between; }
+  .Layout-columns-1wlBH .Layout-left-column-3Pz6S {
+    margin-right: 40px; }
 
-.Project-herobanner-1FyRh {
-  margin-top: 20px; }
+.Project-title-container-1GZPp {
+  position: relative;
+  margin-bottom: 10px; }
+  .Project-title-container-1GZPp .Project-title-H985l {
+    font-size: 28px; }
+  .Project-title-container-1GZPp .Project-background-bDTg_ {
+    position: absolute;
+    top: -8px;
+    right: -2px;
+    width: 95%;
+    height: 30px;
+    background: rgba(3, 174, 239, 0.3);
+    transform: skew(20deg); }
 
-.Project-container-1aAGJ {
-  padding-top: 30px;
-  padding-bottom: 60px; }
-  @media (min-width: 600px) {
-    .Project-container-1aAGJ {
-      padding-top: 40px; } }
+.Project-attribution-3s5Iw {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 20px; }
 
-.Project-article-header-3hsAN {
-  margin-bottom: 30px; }
-  .Project-article-header-3hsAN > h1,
-  .Project-article-header-3hsAN > span {
-    padding: 0 20px; }
-
-.Project-article-body-1oug0 {
-  padding: 0 20px; }
-  @media (min-width: 600px) {
-    .Project-article-body-1oug0 {
-      padding: 0; } }
+.Project-description-1Rl-x {
+  font-size: 16px;
+  line-height: 24px; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/
