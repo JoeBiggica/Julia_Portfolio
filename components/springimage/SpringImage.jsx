@@ -34,7 +34,6 @@ function SpringImage(props) {
 	return (
 		<div className={classnames(styles('container'), className)}>
 			<div 
-				class="container" 
 				onMouseMove={({ clientX: x, clientY: y }) => setAnimateProps({ xy: calc(0, 0) })}
 				onMouseLeave={() => setAnimateProps({ xy: [0, 0] })}
 			>

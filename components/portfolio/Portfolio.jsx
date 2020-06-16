@@ -109,7 +109,7 @@ export default class Portfolio extends Component {
 
 	renderPoster = (p, i) => {
 		return (
-			<a href={`/project/${p.name}`}>
+			<a key={`project-${i}`} href={`/project/${p.name}`}>
 				<Poster {...p} />
 			</a>
 		);
