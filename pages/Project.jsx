@@ -77,7 +77,15 @@ class Project extends Component {
 	}
 
 	renderLightBoxImage = image_url => {
-		return <img className={styles('lightbox-image')} src={image_url} />;
+		const image_styles = {
+			backgroundImage: `url(${image_url})`
+		};
+
+		return (
+			<div className={styles('lightbox-image-container')}>
+				<div className={styles('lightbox-image')} style={image_styles} />
+			</div>
+		);
 	}
 
 	renderImage = (image, index) => {
@@ -125,8 +133,6 @@ class Project extends Component {
 			project,
 			url
 		} = this.props;
-
-		console.log('#####', project_mock);
 		
 		const {
 			title,
@@ -146,7 +152,8 @@ class Project extends Component {
 				<Layout
 					columns={Layout.Columns.TWO_COLUMN}
 					padding
-					left_column_max_width={700}
+					left_column_width='30%'
+					right_column_width='70%'
 					renderLeftColumn={this.renderLeftColumn()}
 					renderRightColumn={this.renderRightColumn()}
 				>

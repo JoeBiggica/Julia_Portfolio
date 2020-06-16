@@ -16,8 +16,8 @@ class Layout extends PureComponent {
 		children: PropTypes.node,
 		padding: PropTypes.bool,
 		columns: PropTypes.oneOf(Object.values(Columns)),
-		left_column_max_width: PropTypes.number,
-		right_column_max_width: PropTypes.number,
+		left_column_width: PropTypes.string,
+		right_column_width: PropTypes.string,
 		renderLeftColumn: PropTypes.object,
 		renderRightColumn: PropTypes.object,
 		renderMiddleColumn: PropTypes.object
@@ -33,8 +33,8 @@ class Layout extends PureComponent {
 		const {
 			columns,
 			children,
-			left_column_max_width,
-			right_column_max_width,
+			left_column_width,
+			right_column_width,
 			renderLeftColumn,
 			renderRightColumn,
 			renderMiddleColumn
@@ -47,10 +47,10 @@ class Layout extends PureComponent {
 			case 'two-column': {
 				return (
 					<div className={styles('columns')}>
-						<div className={styles('left-column')} style={{maxWidth: `${left_column_max_width}px`}}>
+						<div className={styles('left-column')} style={{width: `${left_column_width}`}}>
 							{renderLeftColumn}
 						</div>
-						<div className={styles('right-column')} style={{maxWidth: `${right_column_max_width}px`}}>
+						<div className={styles('right-column')} style={{width: `${right_column_width}`}}>
 							{renderRightColumn}
 						</div>
 					</div>
