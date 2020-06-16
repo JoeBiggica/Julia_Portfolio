@@ -8,8 +8,29 @@
 }
 
 .items-wrapper {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 75px;
-	grid-auto-rows: minmax(100px, auto);
+	// display: grid;
+	// grid-template-columns: repeat(1, 1fr);
+	// grid-gap: 75px;
+	// grid-auto-rows: minmax(100px, auto);
+
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+	@include for-tablet-portrait-up {
+		flex-direction: row;
+	}
+
+	.item {
+		width: 100%;
+
+		@include for-tablet-portrait-up {
+			width: 45%;
+		}
+
+		@include for-tablet-landscape-up {
+			width: 30%;
+		}
+	}
 }

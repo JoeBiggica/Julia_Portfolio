@@ -332,6 +332,9 @@ ul {
   font-size: 24px;
   text-align: center;
   z-index: 1; }
+  @media (max-width: 599px) {
+    .SpringImage-title-19lB0 {
+      right: -10px; } }
 
 /*Oswald Webfont*/
 @font-face {
@@ -339,12 +342,22 @@ ul {
 
 .Poster-container-3mR6w {
   width: 100%;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center; }
 
 .Poster-poster-spring-3yO66 {
-  width: 100%;
+  width: 300px;
   height: 450px;
   background-size: cover; }
+  @media (min-width: 600px) {
+    .Poster-poster-spring-3yO66 {
+      width: 100%;
+      height: 500px; } }
+  @media (min-width: 1026px) {
+    .Poster-poster-spring-3yO66 {
+      width: 100%;
+      height: 450px; } }
 
 .Poster-item-title-2sTDD {
   position: absolute;
@@ -364,10 +377,21 @@ ul {
   max-width: 1120px; }
 
 .Portfolio-items-wrapper-2kv5f {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 75px;
-  grid-auto-rows: minmax(100px, auto); }
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  @media (min-width: 600px) {
+    .Portfolio-items-wrapper-2kv5f {
+      flex-direction: row; } }
+  .Portfolio-items-wrapper-2kv5f .Portfolio-item-3C7xy {
+    width: 100%; }
+    @media (min-width: 600px) {
+      .Portfolio-items-wrapper-2kv5f .Portfolio-item-3C7xy {
+        width: 45%; } }
+    @media (min-width: 1026px) {
+      .Portfolio-items-wrapper-2kv5f .Portfolio-item-3C7xy {
+        width: 30%; } }
 
 @keyframes Index-gradient-251s9 {
   0% {
@@ -376,109 +400,6 @@ ul {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
-
-.Index-container-1kqg1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 100vh;
-  padding: 60px 20px; }
-  .Index-container-1kqg1.Index-main-1O58W {
-    background-color: #fff;
-    background-size: 400%;
-    animation: Index-gradient-251s9 20s ease infinite; }
-  .Index-container-1kqg1.Index-info-3dRFz {
-    background: url("/static/city-background.png") top center/100% no-repeat;
-    background-color: #080605;
-    flex-direction: column;
-    padding-top: 150px; }
-    @media (min-width: 600px) {
-      .Index-container-1kqg1.Index-info-3dRFz {
-        padding-top: 24%; } }
-
-.Index-content-T_TIg {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  padding: 0 20px; }
-
-.Index-logo-nGWz0 {
-  width: 300px;
-  height: 175px;
-  margin-bottom: 40px; }
-  @media (min-width: 600px) {
-    .Index-logo-nGWz0 {
-      width: 500px;
-      height: 295px; } }
-
-.Index-buy-button-2py0_ {
-  margin-bottom: 25px;
-  z-index: 9999; }
-
-.Index-social-buttons-3sJYS {
-  margin-top: 20px; }
-
-.Index-info-3dRFz {
-  color: #fff; }
-  .Index-info-3dRFz .Index-content-T_TIg {
-    margin-bottom: 30px;
-    text-align: center; }
-  .Index-info-3dRFz .Index-subcontent-SfUwl:not(:last-child) {
-    margin-bottom: 20px; }
-  .Index-info-3dRFz .Index-subcontent-SfUwl p {
-    font-size: 18px;
-    line-height: 20px; }
-    @media (min-width: 600px) {
-      .Index-info-3dRFz .Index-subcontent-SfUwl p {
-        font-size: 24px;
-        line-height: 30px; } }
-  .Index-info-3dRFz .Index-line-1peNx {
-    width: 300px;
-    height: 2px;
-    background: #A5DEE4;
-    margin-bottom: 30px; }
-  .Index-info-3dRFz h2 {
-    font-size: 36px;
-    margin-bottom: 12px; }
-    @media (min-width: 600px) {
-      .Index-info-3dRFz h2 {
-        font-size: 48px; } }
-  .Index-info-3dRFz h3 {
-    display: inline-block;
-    font-size: 28px;
-    margin-bottom: 12px;
-    border-bottom: 2px solid #A5DEE4; }
-    @media (min-width: 600px) {
-      .Index-info-3dRFz h3 {
-        font-size: 36px; } }
-  .Index-info-3dRFz li {
-    text-align: center;
-    margin-bottom: 10px; }
-    .Index-info-3dRFz li .Index-label-2V9Gi {
-      font-weight: bold;
-      margin-bottom: 8px; }
-  .Index-info-3dRFz .Index-description-3gzw7 {
-    font-size: 16px;
-    color: #aaa;
-    margin-bottom: 12px; }
-    @media (min-width: 600px) {
-      .Index-info-3dRFz .Index-description-3gzw7 {
-        font-size: 18px; } }
-  .Index-info-3dRFz .Index-info-line-4FCL_ {
-    font-size: 18px; }
-    @media (min-width: 600px) {
-      .Index-info-3dRFz .Index-info-line-4FCL_ {
-        font-size: 28px; } }
-  .Index-info-3dRFz .Index-label-2V9Gi {
-    padding-right: 8px; }
-  .Index-info-3dRFz iframe {
-    margin-top: 30px;
-    width: 100%; }
-    @media (min-width: 600px) {
-      .Index-info-3dRFz iframe {
-        width: 500px; } }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/
