@@ -15,21 +15,17 @@
 
 	display: flex;
 	justify-content: space-between;
-	flex-direction: column;
+	flex-direction: row;
 	flex-wrap: wrap;
 
 	@include for-tablet-portrait-up {
-		flex-direction: row;
+		
 	}
 
 	.item {
-		width: 100%;
+		width: 45%;
 
 		@include for-tablet-portrait-up {
-			width: 45%;
-		}
-
-		@include for-tablet-landscape-up {
 			width: 30%;
 		}
 	}
