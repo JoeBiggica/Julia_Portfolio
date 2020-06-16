@@ -46,6 +46,14 @@ class Project extends Component {
 		project: {}
 	}
 
+	renderImage = image => {
+		return (
+			<div className={styles('image-container')}>
+				<img src={image.url} loading='lazy' />
+			</div>
+		);
+	}
+
 	renderLeftColumn = () => {
 		const {
 			title,
@@ -68,17 +76,12 @@ class Project extends Component {
 
 	renderRightColumn = () => {
 		const {
-			title,
-			attribution,
-			description,
 			images
 		} = project_mock;
 		return (
-			<>
-				<h2 className={styles('title')}>{title}</h2>
-				<p className={styles('attribution')}>{attribution}</p>
-				<p className={styles('description')}>{description}</p>
-			</>
+			<div className={styles('image-list')}>
+				{images.map(this.renderImage)}
+			</div>
 		);
 	}
 
@@ -108,11 +111,6 @@ class Project extends Component {
 					renderLeftColumn={this.renderLeftColumn()}
 					renderRightColumn={this.renderRightColumn()}
 				>
-					<h2 className={styles('title')}>{title}</h2>
-					<p className={styles('attribution')}>{attribution}</p>
-					<p className={styles('description')}>{description}</p>
-					<div className={styles('image-list')}>
-					</div>
 				</Layout>
 			</>
 		)

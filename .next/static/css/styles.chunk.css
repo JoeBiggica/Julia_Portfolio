@@ -89,8 +89,9 @@ ul {
 
 .Layout-columns-1wlBH {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
-  align-content: space-between; }
+  align-content: flex-start; }
   .Layout-columns-1wlBH .Layout-left-column-3Pz6S {
     margin-right: 40px; }
 
@@ -116,6 +117,16 @@ ul {
 .Project-description-1Rl-x {
   font-size: 16px;
   line-height: 24px; }
+
+.Project-image-list-2YXMp {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .Project-image-list-2YXMp img {
+    width: 300px;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 20px #333333; }
 
 .Button-container-2sgpr {
   display: inline-block;

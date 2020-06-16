@@ -21,8 +21,9 @@
 
 .columns {
 	display: flex;
+	justify-content: space-between;
 	flex-direction: row;
-	align-content: space-between;
+	align-content: flex-start;
 
 	.left-column {
 		margin-right: 40px;
