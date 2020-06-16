@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
 
-const domain = 'https://leaky-barrel.now.sh';
+const domain = 'https://julia-portfolio.vercel.app';
 
 class SiteHead extends PureComponent {
 
@@ -44,27 +44,27 @@ class SiteHead extends PureComponent {
 				<meta name='keywords' content='' />
 
 				<meta name='twitter:card' content='summary_large_image' />
-				{/*<meta name='twitter:image' content='https://leaky-barrel.now.sh/static/leakybarrel-social-logo.png' />*/}
+				<meta name='twitter:image' content='https://julia-portfolio.vercel.app/static/julia-social-logo.png' />
 
 				<meta property="fb:app_id" content="926660327777500"/>
 				<meta name='og:title' property="Julia Endow" />
 				<meta property='og:description' content="Julia Endow's art direction and design portfolio" />
 				<meta property="og:type" content="website" />
-				{/*<meta property='og:url' content='https://leaky-barrel.now.sh/' />*/}
-				{/*<meta property='og:image' content='https://leaky-barrel.now.sh/static/leakybarrel-social-logo.png' />*/}
+				<meta property='og:url' content='https://julia-portfolio.vercel.app/' />
+				<meta property='og:image' content='https://julia-portfolio.vercel.app/static/julia-social-logo.png' />
 
 				<meta name='msapplication-TileColor' content='#000000' />
 				<meta name='msapplication-config' content='none' />
 				<meta name='theme-color' content='#780C42' />
 
-				{/*<link rel="canonical" href='https://leaky-barrel.now.sh' />*/}
-				{/*<link rel='shortcut icon' type='image/x-icon' href='https://leaky-barrel.now.sh/static/favicon/favicon.png' />
-				<link rel='icon' type='image/png' href='https://leaky-barrel.now.sh/static/favicon/favicon.png' sizes='16x16' />
-				<link rel='icon' type='image/png' href='https://leaky-barrel.now.sh/static/favicon/favicon-32x32.png' sizes='32x32' />
-				<link rel='icon' type='image/png' href='https://leaky-barrel.now.sh/static/favicon/favicon-48x48.png' sizes='48x48' />
-				<link rel='icon' type='image/png' href='https://leaky-barrel.now.sh/static/favicon/favicon-96x96.png' sizes='96x96' />
+				<link rel="canonical" href='https://julia-portfolio.vercel.app' />
+				<link rel='shortcut icon' type='image/x-icon' href='https://julia-portfolio.vercel.app/static/favicon/favicon.png' />
+				<link rel='icon' type='image/png' href='https://julia-portfolio.vercel.app/static/favicon/favicon.png' sizes='16x16' />
+				<link rel='icon' type='image/png' href='https://julia-portfolio.vercel.app/static/favicon/favicon-32x32.png' sizes='32x32' />
+				<link rel='icon' type='image/png' href='https://julia-portfolio.vercel.app/static/favicon/favicon-48x48.png' sizes='48x48' />
+				<link rel='icon' type='image/png' href='https://julia-portfolio.vercel.app/static/favicon/favicon-96x96.png' sizes='96x96' />
 
-				<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165823635-1"></script>*/}
+				<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165823635-1"></script>
 
 				{this.props.meta.map(this.renderTag)}
 			</Head>

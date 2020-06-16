@@ -48,7 +48,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !_b
 
 
 
-var domain = 'https://leaky-barrel.now.sh';
+var domain = 'https://julia-portfolio.vercel.app';
 
 var SiteHead = /*#__PURE__*/function (_PureComponent) {
   Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(SiteHead, _PureComponent);
@@ -114,6 +114,9 @@ var SiteHead = /*#__PURE__*/function (_PureComponent) {
         name: "twitter:card",
         content: "summary_large_image"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
+        name: "twitter:image",
+        content: "https://julia-portfolio.vercel.app/static/julia-social-logo.png"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
         property: "fb:app_id",
         content: "926660327777500"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
@@ -126,6 +129,12 @@ var SiteHead = /*#__PURE__*/function (_PureComponent) {
         property: "og:type",
         content: "website"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
+        property: "og:url",
+        content: "https://julia-portfolio.vercel.app/"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
+        property: "og:image",
+        content: "https://julia-portfolio.vercel.app/static/julia-social-logo.png"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
         name: "msapplication-TileColor",
         content: "#000000"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
@@ -134,6 +143,36 @@ var SiteHead = /*#__PURE__*/function (_PureComponent) {
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
         name: "theme-color",
         content: "#780C42"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
+        rel: "canonical",
+        href: "https://julia-portfolio.vercel.app"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
+        rel: "shortcut icon",
+        type: "image/x-icon",
+        href: "https://julia-portfolio.vercel.app/static/favicon/favicon.png"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
+        rel: "icon",
+        type: "image/png",
+        href: "https://julia-portfolio.vercel.app/static/favicon/favicon.png",
+        sizes: "16x16"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
+        rel: "icon",
+        type: "image/png",
+        href: "https://julia-portfolio.vercel.app/static/favicon/favicon-32x32.png",
+        sizes: "32x32"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
+        rel: "icon",
+        type: "image/png",
+        href: "https://julia-portfolio.vercel.app/static/favicon/favicon-48x48.png",
+        sizes: "48x48"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
+        rel: "icon",
+        type: "image/png",
+        href: "https://julia-portfolio.vercel.app/static/favicon/favicon-96x96.png",
+        sizes: "96x96"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("script", {
+        async: true,
+        src: "https://www.googletagmanager.com/gtag/js?id=UA-165823635-1"
       }), this.props.meta.map(this.renderTag));
     }
   }]);

@@ -111,84 +111,6 @@ ul {
     .Layout-columns-1wlBH .Layout-right-column-3xxmt {
       width: 100% !important; } }
 
-.LightBox-container-3NzL1 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.75); }
-
-.LightBox-inner-cHFtm {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh; }
-
-.Project-title-container-1GZPp {
-  position: relative;
-  margin-bottom: 10px;
-  display: inline-block; }
-  .Project-title-container-1GZPp .Project-title-H985l {
-    font-size: 28px; }
-    @media (max-width: 599px) {
-      .Project-title-container-1GZPp .Project-title-H985l {
-        font-size: 24px; } }
-  .Project-title-container-1GZPp .Project-background-bDTg_ {
-    position: absolute;
-    top: 2px;
-    right: 0;
-    width: 100%;
-    height: 30px;
-    background: rgba(3, 174, 239, 0.3);
-    transform: skew(20deg); }
-
-.Project-attribution-3s5Iw {
-  font-size: 12px;
-  color: #666;
-  margin-bottom: 20px; }
-
-.Project-description-1Rl-x {
-  font-size: 16px;
-  line-height: 24px; }
-  @media (max-width: 599px) {
-    .Project-description-1Rl-x {
-      font-size: 14px;
-      line-height: 22px; } }
-
-.Project-image-list-2YXMp {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center; }
-  @media (min-width: 600px) {
-    .Project-image-list-2YXMp {
-      flex-direction: row;
-      flex-wrap: wrap; } }
-  .Project-image-list-2YXMp img {
-    width: 300px;
-    margin-bottom: 30px;
-    box-shadow: 10px 10px 20px #333333;
-    cursor: zoom-in; }
-    @media (min-width: 600px) {
-      .Project-image-list-2YXMp img {
-        width: 45%; } }
-
-.Project-lightbox-image-container-1VfcX {
-  width: 50%;
-  height: 100vh;
-  padding: 20px;
-  display: flex;
-  justify-content: center; }
-  @media (max-width: 599px) {
-    .Project-lightbox-image-container-1VfcX {
-      width: 100%; } }
-  .Project-lightbox-image-container-1VfcX .Project-lightbox-image-Rl77h {
-    width: 100%;
-    height: 100%; }
-
 .Button-container-2sgpr {
   display: inline-block;
   position: relative;
@@ -387,6 +309,84 @@ ul {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
+
+.LightBox-container-3NzL1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75); }
+
+.LightBox-inner-cHFtm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh; }
+
+.Project-title-container-1GZPp {
+  position: relative;
+  margin-bottom: 10px;
+  display: inline-block; }
+  .Project-title-container-1GZPp .Project-title-H985l {
+    font-size: 28px; }
+    @media (max-width: 599px) {
+      .Project-title-container-1GZPp .Project-title-H985l {
+        font-size: 24px; } }
+  .Project-title-container-1GZPp .Project-background-bDTg_ {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 100%;
+    height: 30px;
+    background: rgba(3, 174, 239, 0.3);
+    transform: skew(20deg); }
+
+.Project-attribution-3s5Iw {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 20px; }
+
+.Project-description-1Rl-x {
+  font-size: 16px;
+  line-height: 24px; }
+  @media (max-width: 599px) {
+    .Project-description-1Rl-x {
+      font-size: 14px;
+      line-height: 22px; } }
+
+.Project-image-list-2YXMp {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center; }
+  @media (min-width: 600px) {
+    .Project-image-list-2YXMp {
+      flex-direction: row;
+      flex-wrap: wrap; } }
+  .Project-image-list-2YXMp img {
+    width: 300px;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 20px #333333;
+    cursor: zoom-in; }
+    @media (min-width: 600px) {
+      .Project-image-list-2YXMp img {
+        width: 45%; } }
+
+.Project-lightbox-image-container-1VfcX {
+  width: 50%;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center; }
+  @media (max-width: 599px) {
+    .Project-lightbox-image-container-1VfcX {
+      width: 100%; } }
+  .Project-lightbox-image-container-1VfcX .Project-lightbox-image-Rl77h {
+    width: 100%;
+    height: 100%; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/
