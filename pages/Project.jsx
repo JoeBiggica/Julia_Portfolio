@@ -20,21 +20,22 @@ class Project extends Component {
 	static async getInitialProps ({ store, req, res, query }) {
 		const isServer = !!req
 		const project_name = query.name;
-		// const url = `https://www.fongshungga.com/article/${slug}`;
 
-		// if (typeof(fetch) !== 'undefinded') {
-		// 	const article_res = await fetch(`https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/articles/${slug}/article-data.json`);
-		// 	const article_json = await article_res.json();
+		if (typeof(fetch) !== 'undefinded') {
+			const project_res = await fetch(`https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/${project_name}/project.json`);
+			const project_json = await project_res.json();
 
-		// 	if (article_json) {
-		// 		return {
-		// 			article: article_json.article
-		// 		};
-		// 	}
-		// }
+			if (project_json) {
+				console.log(project_json);
+				return {
+					project: project_json
+				};
+			}
+		}
 
 		return {
-			project_name
+			project_name,
+			project
 		};
 		
 	}
@@ -108,7 +109,7 @@ class Project extends Component {
 			attribution,
 			description,
 			images
-		} = project_mock;
+		} = this.props.project;
 		return (
 			<>
 
@@ -125,10 +126,10 @@ class Project extends Component {
 	renderRightColumn = () => {
 		const {
 			images
-		} = project_mock;
+		} = this.props.project;
 		return (
 			<div className={styles('image-list')}>
-				{images.map(this.renderImage)}
+				{ images && images.map(this.renderImage) }
 			</div>
 		);
 	}
@@ -145,8 +146,8 @@ class Project extends Component {
 			attribution,
 			description,
 			images
-		} = project_mock;
-
+		} = project;
+		console.log('########', project);
 		const {
 			lightbox_active,
 			lightbox_image_url
