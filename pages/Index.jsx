@@ -56,10 +56,10 @@ class Index extends Component {
 		return (
 			<>
 				<Header />
-				<Layout>
-					<section className={styles('main', 'container')}>
-						<Portfolio />
-					</section>
+				<Layout 
+					padding 
+				>
+					<Portfolio />
 				</Layout>
 				
 			</>

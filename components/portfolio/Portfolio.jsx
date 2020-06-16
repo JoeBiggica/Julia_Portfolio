@@ -109,9 +109,9 @@ export default class Portfolio extends Component {
 
 	renderPoster = (p, i) => {
 		return (
-			<div className={styles('item')}>
+			<a href={`/project/${p.name}`}>
 				<Poster {...p} />
-			</div>
+			</a>
 		);
 	}
 

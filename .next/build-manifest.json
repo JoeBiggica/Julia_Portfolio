@@ -3,7 +3,7 @@
     "static/development/dll/dll_81335aa72b1e6ce3203f.js"
   ],
   "pages": {
-    "/Index": [
+    "/Project": [
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",
