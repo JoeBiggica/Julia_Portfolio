@@ -175,7 +175,7 @@ class Project extends Component {
 			attribution,
 			description,
 			images
-		} = project_mock;
+		} = this.props.project;
 		return (
 			<>
 
@@ -193,7 +193,7 @@ class Project extends Component {
 		const {
 			images,
 			videos
-		} = project_mock;
+		} = this.props.project;
 
 		return (
 			<>
