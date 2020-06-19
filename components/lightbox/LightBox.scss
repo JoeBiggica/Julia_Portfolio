@@ -14,8 +14,8 @@
 .inner {
 	display: flex;
 	justify-content: center;
-	align-items: flex-start;
-	overflow-y: scroll;
+	align-items: center;
+	overflow: auto;
 	width: 100vw;
     height: 100vh;
 }

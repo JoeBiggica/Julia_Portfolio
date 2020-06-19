@@ -14,10 +14,12 @@
 			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/pizzahut/PizzaHut_03.jpg"
 		},
 		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/pizzahut/PizzaHut_04.jpg"
+			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/pizzahut/PizzaHut_04.jpg",
+			"type": "long"
 		},
 		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/pizzahut/PizzaHut_05.jpg"
+			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/pizzahut/PizzaHut_05.jpg",
+			"type": "long"
 		}
 	]
 }

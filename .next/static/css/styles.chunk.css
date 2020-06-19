@@ -122,8 +122,8 @@ ul {
 .LightBox-inner-cHFtm {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  overflow-y: scroll;
+  align-items: center;
+  overflow: auto;
   width: 100vw;
   height: 100vh; }
 
@@ -180,7 +180,7 @@ ul {
         width: 45%; } }
 
 .Project-lightbox-image-container-1VfcX {
-  width: 60%;
+  width: 50%;
   padding: 20px; }
   @media (max-width: 599px) {
     .Project-lightbox-image-container-1VfcX {
