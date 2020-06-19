@@ -72,11 +72,11 @@
 }
 
 .lightbox-image-container {
-	width: 50%;
+	width: 60%;
 	// height: 100vh;
 	padding: 20px;
-	display: flex;
-	justify-content: center;
+	// display: flex;
+	// justify-content: center;
 
 	@include for-phone-only {
 		width: 100%;
