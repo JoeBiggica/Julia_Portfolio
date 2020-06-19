@@ -147,11 +147,25 @@ class Project extends Component {
 
 		return (
 			<img 
-				key={`image=${index}`}
+				key={`image-${index}`}
 				src={url} 
 				loading='lazy' 
 				onClick={() => this.openLightBox(lightbox_image)}
 			/>
+		);
+	}
+
+	renderVideo = (video, index) => {
+		return (
+			<div className={styles('video-container')}>
+				<iframe
+					key={`video-${index}`}
+					src="https://player.vimeo.com/video/131732713?wmode=opaque&api=1&autoplay=1"
+					width="100%"
+					height="400px"
+					autoplay
+				/>
+			</div>
 		);
 	}
 
@@ -177,12 +191,23 @@ class Project extends Component {
 
 	renderRightColumn = () => {
 		const {
-			images
+			images,
+			videos
 		} = project_mock;
+
 		return (
-			<div className={styles('image-list')}>
-				{ images && images.map(this.renderImage) }
-			</div>
+			<>
+				{ images &&
+					<div className={styles('image-list')}>
+						{ images && images.map(this.renderImage) }
+					</div>
+				}
+				{ videos && 
+				 	<div className={styles('video-list')}>
+						{ videos && videos.map(this.renderVideo) }
+					</div>
+				}
+			</>
 		);
 	}
 

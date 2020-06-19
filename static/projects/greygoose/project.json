@@ -6,5 +6,10 @@
 		{
 			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/greygoose/GreyGoose_01.jpg"
 		}
+	],
+	"videos": [
+		{
+			"url": "https://player.vimeo.com/video/131732713?wmode=opaque&api=1&autoplay=1"
+		}
 	]
 }

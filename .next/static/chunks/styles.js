@@ -368,7 +368,7 @@ module.exports = {"container":"LightBox-container-3NzL1","inner":"LightBox-inner
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1592595024239");
+            injectCss(link, link.href.split("?")[0] + "?unix=1592596349009");
           });
       }
     }
@@ -574,7 +574,7 @@ module.exports = {"gradient":"Index-gradient-251s9"};;
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"title-container":"Project-title-container-1GZPp","title":"Project-title-H985l","background":"Project-background-bDTg_","attribution":"Project-attribution-3s5Iw","description":"Project-description-1Rl-x","image-list":"Project-image-list-2YXMp","long-image":"Project-long-image-3O1r9","lightbox-image-container":"Project-lightbox-image-container-1VfcX","lightbox-image":"Project-lightbox-image-Rl77h"};;
+module.exports = {"title-container":"Project-title-container-1GZPp","title":"Project-title-H985l","background":"Project-background-bDTg_","attribution":"Project-attribution-3s5Iw","description":"Project-description-1Rl-x","image-list":"Project-image-list-2YXMp","long-image":"Project-long-image-3O1r9","lightbox-image-container":"Project-lightbox-image-container-1VfcX","lightbox-image":"Project-lightbox-image-Rl77h","video-list":"Project-video-list-2GIiL","video-container":"Project-video-container-171Lm"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -596,7 +596,7 @@ module.exports = {"title-container":"Project-title-container-1GZPp","title":"Pro
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1592593189962");
+            injectCss(link, link.href.split("?")[0] + "?unix=1592596539961");
           });
       }
     }

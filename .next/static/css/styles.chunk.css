@@ -198,6 +198,20 @@ ul {
     width: 100%;
     height: 100%; }
 
+.Project-video-list-2GIiL .Project-video-container-171Lm {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 54%;
+  background-color: #333333; }
+
+.Project-video-list-2GIiL iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 .Button-container-2sgpr {
   display: inline-block;
   position: relative;
