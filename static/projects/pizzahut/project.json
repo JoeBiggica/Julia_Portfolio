@@ -1,22 +1,23 @@
 {
-	"title": "SkullCandy: Offbeat",
-	"attribution": "Art Direction & Design by Julia Endow, Meijun Cai and Sylvia Kim",
-	"description": "SkullCandy is a brand that speaks to the rebels, the misfits, the creatives, the daydreamers, the troublemakers, the strange, and the unique. We used an analogy with animal metaphors to communicate our idea: The Lone Wolf, The Dark Horse, and The Black Sheep.",
+	"title": "Pizza Hut: Don't Eat Basic",
+	"label": "MRY 2014 Intern Competition Team Winner",
+	"attribution": "Collaboration with Alexandra Butler, Jessica Clement, Christina Hardison, Deanna Meyer, and Jacob Minkus",
+	"description": "<p>The brief was to encourage college students to try and order Pizza Hut's new menu and flavors.</p><p>In order to achieve this our group implemented a trending phrase \"basic bitch\" and morphed it into our campaign concept and tagline \"Don't Eat Basic\". College students fear being basic and Pizza Hut's new menu is anything but that.</p><p>Also to celebrate the arrival of the new menu, Pizza Hut chains in college towns will unveil a new fun ordering process along with Pizza Hut having a nationwide food truck tour that visits college campuses and allows students to create and sample the new flavors.</p>",
 	"images": [
 		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_01.jpg"
+			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/pizzahut/PizzaHut_01.jpg"
 		},
 		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_02.jpg"
+			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/pizzahut/PizzaHut_02.jpg"
 		},
 		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_03.jpg"
+			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/pizzahut/PizzaHut_03.jpg"
 		},
 		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_04.jpg"
+			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/pizzahut/PizzaHut_04.jpg"
 		},
 		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_05.jpg"
+			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/pizzahut/PizzaHut_05.jpg"
 		}
 	]
 }

@@ -1,22 +1,12 @@
 {
-	"title": "SkullCandy: Offbeat",
-	"attribution": "Art Direction & Design by Julia Endow, Meijun Cai and Sylvia Kim",
-	"description": "SkullCandy is a brand that speaks to the rebels, the misfits, the creatives, the daydreamers, the troublemakers, the strange, and the unique. We used an analogy with animal metaphors to communicate our idea: The Lone Wolf, The Dark Horse, and The Black Sheep.",
+	"title": "Crest: Jewels",
+	"description": "<p>White teeth are considered very valuable even though it isn't outwardly said. With all the things people use them for and how hard people try to make/keep them white, they are as precious as diamonds.</p><p>Crest toothpaste helps make and keep teeth white making them as valuable and beautiful as they should be, like diamonds.</p>",
 	"images": [
 		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_01.jpg"
+			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/crest/Crest_01.jpg"
 		},
 		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_02.jpg"
-		},
-		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_03.jpg"
-		},
-		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_04.jpg"
-		},
-		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_05.jpg"
+			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/crest/Crest_02.jpg"
 		}
 	]
 }

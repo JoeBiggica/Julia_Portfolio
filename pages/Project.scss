@@ -8,7 +8,7 @@
 	display: inline-block;
 
 	.title {
-		font-size: 28px;
+		font-size: 24px;
 
 		@include for-phone-only {
 			font-size: 24px;
@@ -36,6 +36,10 @@
 .description {
 	font-size: 16px;
 	line-height: 24px;
+
+	p:not(:last-child) {
+		margin-bottom: 20px;
+	}
 
 	@include for-phone-only {
 		font-size: 14px;
@@ -69,12 +73,16 @@
 
 .lightbox-image-container {
 	width: 50%;
-	height: 100vh;
+	// height: 100vh;
 	padding: 20px;
 	display: flex;
 	justify-content: center;
 
 	@include for-phone-only {
+		width: 100%;
+	}
+
+	img {
 		width: 100%;
 	}
 

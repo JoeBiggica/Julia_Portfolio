@@ -1,22 +1,16 @@
 {
 	"title": "SkullCandy: Offbeat",
 	"attribution": "Art Direction & Design by Julia Endow, Meijun Cai and Sylvia Kim",
-	"description": "SkullCandy is a brand that speaks to the rebels, the misfits, the creatives, the daydreamers, the troublemakers, the strange, and the unique. We used an analogy with animal metaphors to communicate our idea: The Lone Wolf, The Dark Horse, and The Black Sheep.",
+	"description": "<p>SkullCandy is a brand that speaks to the rebels, the misfits, the creatives, the daydreamers, the troublemakers, the strange, and the unique. We used an analogy with animal metaphors to communicate our idea: The Lone Wolf, The Dark Horse, and The Black Sheep.</p>",
 	"images": [
 		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_01.jpg"
+			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/skullcandy/Skullcandy_01.jpg"
 		},
 		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_02.jpg"
+			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/skullcandy/Skullcandy_02.jpg"
 		},
 		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_03.jpg"
-		},
-		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_04.jpg"
-		},
-		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_05.jpg"
+			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/skullcandy/Skullcandy_03.jpg"
 		}
 	]
 }

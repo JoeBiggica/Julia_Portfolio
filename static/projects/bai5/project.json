@@ -1,22 +1,15 @@
 {
-	"title": "SkullCandy: Offbeat",
-	"attribution": "Art Direction & Design by Julia Endow, Meijun Cai and Sylvia Kim",
-	"description": "SkullCandy is a brand that speaks to the rebels, the misfits, the creatives, the daydreamers, the troublemakers, the strange, and the unique. We used an analogy with animal metaphors to communicate our idea: The Lone Wolf, The Dark Horse, and The Black Sheep.",
+	"title": "Bai5: A Sip of Life",
+	"description": "<p>Bai5's drinks are all natural and has different fruit flavors. Each one helps combat against tiredness and free-radicals which help keep you healthy. It gives life in each sip!</p>",
 	"images": [
 		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_01.jpg"
+			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/bai5/Bai5_01.jpg"
 		},
 		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_02.jpg"
+			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/bai5/Bai5_02.jpg"
 		},
 		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_03.jpg"
-		},
-		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_04.jpg"
-		},
-		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/barkbox/BarkBox_05.jpg"
+			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/bai5/Bai5_03.jpg"
 		}
 	]
 }

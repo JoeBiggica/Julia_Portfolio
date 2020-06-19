@@ -87,7 +87,8 @@ class Project extends Component {
 
 		return (
 			<div className={styles('lightbox-image-container')}>
-				<div className={styles('lightbox-image')} style={image_styles} />
+				{/*<div className={styles('lightbox-image')} style={image_styles} />*/}
+				<img src={image_url} />
 			</div>
 		);
 	}
@@ -117,8 +118,8 @@ class Project extends Component {
 					<h3 className={styles('title')}>{title}</h3>
 					<div className={styles('background')} />
 				</div>
-				<p className={styles('attribution')}>{attribution}</p>
-				<p className={styles('description')}>{description}</p>
+				{ attribution && <p className={styles('attribution')}>{attribution}</p> }
+				{description && <div className={styles('description')} dangerouslySetInnerHTML={{ __html: description }} /> }
 			</>
 		);
 	}
@@ -141,12 +142,6 @@ class Project extends Component {
 			url
 		} = this.props;
 		
-		const {
-			title,
-			attribution,
-			description,
-			images
-		} = project;
 		console.log('########', project);
 		const {
 			lightbox_active,
