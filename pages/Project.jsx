@@ -59,11 +59,18 @@ class Project extends Component {
 		});
 	}
 
+	openLightBox = image => {
+		const {
+			url,
+			long_image
+		} = image;
 
-	openLightBox = image_url => {
 		this.setState({
 			lightbox_active: true,
-			lightbox_image_url: image_url
+			lightbox_image: {
+				url,
+				long_image
+			}
 		});
 		document.body.style['overflow-x'] = 'hidden';
 		document.body.style['overflow-y'] = 'hidden';
@@ -77,29 +84,73 @@ class Project extends Component {
 		document.body.style['overflow-y'] = '';
 	}
 
-	renderLightBoxImage = image_url => {
+	renderLightBoxImage = image => {
+		const {
+			url,
+			long_image
+		} = image;
+
 		const image_styles = {
-			backgroundImage: `url(${image_url})`,
+			backgroundImage: `url(${url})`,
 			backgroundSize: 'contain',
 			backgroundRepeat: 'no-repeat',
 			backgroundPosition: 'center'
 		};
 
+		if (long_image) {
+			return (
+				<div className={styles('lightbox-image-container')}>
+					<img src={url} alt={url} />
+				</div>
+			);
+		}
+
 		return (
 			<div className={styles('lightbox-image-container')}>
-				{/*<div className={styles('lightbox-image')} style={image_styles} />*/}
-				<img src={image_url} />
+				<div className={styles('lightbox-image')} style={image_styles} />
 			</div>
 		);
 	}
 
 	renderImage = (image, index) => {
+		const {
+			url,
+			long_image
+		} = image;
+
+		if (long_image) {
+			const long_image_styles = {
+				backgroundImage: `url(${url})`,
+				backgroundSize: 'contain',
+				backgroundRepeat: 'no-repeat',
+				backgroundPosition: 'center'
+			};
+
+			const lightbox_image = {
+				url,
+				long_image
+			}
+
+			return (
+				<div 
+					key={`image=${index}`}
+					className={styles('long-image')} 
+					style={long_image_styles}
+					onClick={() => this.openLightBox(lightbox_image)}
+				/>
+			);
+		}
+
+		const lightbox_image = {
+			url
+		}
+
 		return (
 			<img 
 				key={`image=${index}`}
-				src={image.url} 
+				src={url} 
 				loading='lazy' 
-				onClick={() => this.openLightBox(image.url)}
+				onClick={() => this.openLightBox(lightbox_image)}
 			/>
 		);
 	}
@@ -110,7 +161,7 @@ class Project extends Component {
 			attribution,
 			description,
 			images
-		} = this.props.project;
+		} = project_mock;
 		return (
 			<>
 
@@ -127,7 +178,7 @@ class Project extends Component {
 	renderRightColumn = () => {
 		const {
 			images
-		} = this.props.project;
+		} = project_mock;
 		return (
 			<div className={styles('image-list')}>
 				{ images && images.map(this.renderImage) }
@@ -142,10 +193,9 @@ class Project extends Component {
 			url
 		} = this.props;
 		
-		console.log('########', project);
 		const {
 			lightbox_active,
-			lightbox_image_url
+			lightbox_image
 		} = this.state;
 		
 		return (
@@ -154,15 +204,17 @@ class Project extends Component {
 				<Layout
 					columns={Layout.Columns.TWO_COLUMN}
 					padding
-					left_column_width='30%'
-					right_column_width='70%'
+					left_column_width='35%'
+					right_column_width='65%'
 					renderLeftColumn={this.renderLeftColumn()}
 					renderRightColumn={this.renderRightColumn()}
 				>
 				</Layout>
 				{ lightbox_active && 
-					<LightBox onClick={() => this.closeLightBox()}>
-						{ this.renderLightBoxImage(lightbox_image_url) }
+					<LightBox
+						onClick={() => this.closeLightBox()}
+					>
+						{ this.renderLightBoxImage(lightbox_image) }
 					</LightBox>
 				}
 			</>

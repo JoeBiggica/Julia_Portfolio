@@ -59,7 +59,8 @@
 		flex-wrap: wrap;
 	}
 
-	img {
+	img,
+	.long-image {
 		width: 300px;
 		margin-bottom: 30px;
 		box-shadow: 10px 10px 20px $black;
@@ -69,11 +70,16 @@
 			width: 45%;
 		}
 	}
+
+	.long-image {
+		height: 400px;
+		background-color: $black;
+	}
 }
 
 .lightbox-image-container {
 	width: 50%;
-	// height: 100vh;
+	height: 100vh;
 	padding: 20px;
 	// display: flex;
 	// justify-content: center;
