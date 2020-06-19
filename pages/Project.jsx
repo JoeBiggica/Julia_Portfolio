@@ -162,7 +162,6 @@ class Project extends Component {
 					key={`video-${index}`}
 					src="https://player.vimeo.com/video/131732713?wmode=opaque&api=1&autoplay=1"
 					width="100%"
-					height="400px"
 					autoplay
 				/>
 			</div>

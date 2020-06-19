@@ -2,11 +2,6 @@
 	"title": "Grey Goose Pathfinder",
 	"attribution": "Collaboration with Miriam Doyne",
 	"description": "<p>Brief: To bring awareness of Grey Goose vodka through digital advertising.</p><p>Insight: People are habitual creatures who frequently visit the same places (bars, restaurants, etc.)</p><p>Using this insight, we created a digital experience Grey Goose Pathfinder. It uses facebook profiles to locate past places and recommend new ones. People can go onto the map and see where they've been and click to on the orbs to see an infograph based on the place. It then recommends new places the user can visit based on their habitual locations. These new places would display the signature Grey Goose drink along with an option to reserve a table.</p>",
-	"images": [
-		{
-			"url": "https://biggica-sites.s3.amazonaws.com/julia-portfolio/projects/greygoose/GreyGoose_01.jpg"
-		}
-	],
 	"videos": [
 		{
 			"url": "https://player.vimeo.com/video/131732713?wmode=opaque&api=1&autoplay=1"
